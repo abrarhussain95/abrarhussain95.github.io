@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Abrar Hussain</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="communication.html">Communication</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="content-page contact-page">
+
+  <h1>Get in Touch</h1>
+
+  <div class="contact-layout">
+
+    <!-- LEFT SIDE FORM -->
+    <section class="contact-form-section">
+
+      <p class="required-note"><span>*</span> Indicates required field</p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+
+        <label>Name <span>*</span></label>
+        <div class="name-row">
+          <input type="text" name="first-name" placeholder="First" required>
+          <input type="text" name="last-name" placeholder="Last" required>
+        </div>
+
+        <label>Email <span>*</span></label>
+        <input type="email" name="email" required>
+
+        <label>Comment <span>*</span></label>
+        <textarea name="message" rows="8" required></textarea>
+
+        <input type="hidden" name="_subject" value="New message from your website">
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </section>
+
+    <!-- RIGHT SIDE MAP -->
+    <section class="contact-map-section">
+
+      <iframe
+        src="https://www.google.com/maps?q=40.09325,-88.22092&hl=en&z=15&output=embed"
+        class="contact-map"
+        loading="lazy">
+      </iframe>
+
+    </section>
+
+  </div>
+
+</main>
+
+</body>
+</html>
