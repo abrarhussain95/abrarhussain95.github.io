@@ -1,8 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: 'Inter', sans-serif;  
+    margin: 0;
   background-color: white;
   color: #222;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* HEADER */
@@ -44,7 +47,7 @@ nav a:hover {
 }
 
 .profile-photo {
-  width: 160px;
+  width: 180px;   
   height: auto;
   display: block;
   margin-bottom: 25px;
@@ -71,7 +74,7 @@ nav a:hover {
 .text-link {
   color: #222;
   text-decoration: none;
-  font-size: 14px;   /* updated */
+  font-size: 14px;
 }
 
 .text-link:hover {
@@ -85,30 +88,74 @@ nav a:hover {
 }
 
 .main-content h1 {
-  font-size: 50px;   /* updated */
-  font-weight: 700;  /* bold */
+  font-size: 50px;
+  font-weight: 700;
   margin: 0;
-  color: #000;       /* black */
+  color: #000;
+  letter-spacing: -0.5px;   
 }
 
 .subtitle {
-  font-size: 20px;   /* updated */
+  font-size: 20px;
   margin-top: 12px;
-  margin-bottom: 48px;
-  color: #444;
+  margin-bottom: 40px;
+  color: #555;
+  font-weight: 400;
 }
 
 .intro-text {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-
 .intro-text p {
-  font-size: 16px;   /* updated */
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.75;   
   max-width: 650px;
   margin: 0;
+}
+
+/* RESEARCH INTERESTS */
+.research-interests {
+  margin-top: 80px;
+}
+
+.research-interests h2 {
+  font-size: 30px;    
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.research-interests ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.research-interests li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* AFFILIATION SECTION */
+.affiliation {
+  margin-top: 160px;  
+  display: flex;
+  align-items: center;
+  gap: 6px;            
+  margin-left: -20px;  
+}
+
+.affiliation-icon {
+  width: 90px;         
+  height: 90px;
+  display: block;
+}
+
+.affiliation-text p {
+  margin: 2px 0;
+  font-size: 18px;
+  color: #444;
 }
 
 /* MOBILE */
@@ -132,25 +179,4 @@ nav a:hover {
   .intro-text p {
     font-size: 15px;
   }
-}
-
-/* AFFILIATION SECTION */
-.affiliation {
-  margin-top: 400px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: -10px;
-}
-
-.affiliation-icon {
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-
-.affiliation-text p {
-  margin: 2px 0;
-  font-size: 18px;
-  color: #444;
 }
