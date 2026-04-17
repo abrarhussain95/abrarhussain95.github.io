@@ -48,10 +48,9 @@ main {
 }
 
 .profile-photo {
-  width: 420px;
-  max-width: 90%;
+  width: 300px;   /* smaller */
   height: auto;
-  margin: 20px auto;
+  margin: 30px auto;
   display: block;
 }
 
