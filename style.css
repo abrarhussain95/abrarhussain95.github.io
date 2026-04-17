@@ -48,7 +48,7 @@ main {
 }
 
 .profile-photo {
-  width: 300px;   /* smaller */
+  width: 100px;   /* smaller */
   height: auto;
   margin: 30px auto;
   display: block;
