@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 header {
-  background-color: #0f0f0f;  
+  background-color: #000;  
   padding: 18px 0;
   border-bottom: 1px solid #222;   
   
@@ -30,7 +30,7 @@ nav a {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: none;
-  color: #f2f2f2;   /* softer white */
+  color: #e5e5e5;   
   text-decoration: none;
   margin: 0 18px;
 }
