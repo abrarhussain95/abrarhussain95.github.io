@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abrar Hussain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
-  
+
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXXHR2ET06"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HXXHR2ET06');
-</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXXHR2ET06"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HXXHR2ET06');
+  </script>
 </head>
 
 <body>
@@ -33,98 +30,123 @@
 
   <main class="home-layout">
 
+    <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
 
       <img src="www/images/profile.png" alt="Abrar Hussain" class="profile-photo">
 
-      <div class="link-group">
+      <h2 class="sidebar-name">Abrar Hussain</h2>
+      <p class="sidebar-degrees">(DVM, M.Phil.)</p>
+      <p class="sidebar-title">Fulbright Ph.D. Scholar in Epidemiology</p>
 
+      <div class="sidebar-affiliation">
+        <p>Department of Pathobiology</p>
+        <p>College of Veterinary Medicine</p>
+        <p>University of Illinois Urbana-Champaign</p>
+      </div>
+
+      <div class="link-group">
         <div class="icon-row">
           <img src="www/icons/email.png" class="icon" alt="Email">
           <a href="mailto:abrarh2@illinois.edu" class="text-link">abrarh2@illinois.edu</a>
         </div>
-        
         <div class="icon-row">
-          <img src="www/icons/googlescholar.png" class="icon" alt="GoogleScholar">
-          <a href="https://scholar.google.com/citations?hl=en&user=bEgiCIsAAAAJ" class="text-link" target="_blank">abrarhussain</a>
+          <img src="www/icons/googlescholar.png" class="icon" alt="Google Scholar">
+          <a href="https://scholar.google.com/citations?hl=en&user=bEgiCIsAAAAJ" class="text-link" target="_blank">Google Scholar</a>
         </div>
-
         <div class="icon-row">
           <img src="www/icons/linkedin.png" class="icon" alt="LinkedIn">
-          <a href="https://linkedin.com/in/abrarhosain" class="text-link" target="_blank">abrarhosain</a>
+          <a href="https://linkedin.com/in/abrarhosain" class="text-link" target="_blank">LinkedIn</a>
         </div>
-
         <div class="icon-row">
           <img src="www/icons/github.png" class="icon" alt="GitHub">
-          <a href="https://github.com/abrarhussain95" class="text-link" target="_blank">abrarhussain95</a>
+          <a href="https://github.com/abrarhussain95" class="text-link" target="_blank">GitHub</a>
         </div>
-
         <div class="icon-row">
           <img src="www/icons/bs.png" class="icon" alt="Bluesky">
-          <a href="https://abrarhosain.bsky.social" class="text-link" target="_blank">abrarhosain</a>
+          <a href="https://bsky.app/profile/abrarhosain.bsky.social" class="text-link" target="_blank">Bluesky</a>
         </div>
-
       </div>
 
     </aside>
 
+    <!-- RIGHT MAIN CONTENT -->
     <section class="main-content">
 
-      <h1>Abrar Hussain</h1>
-
-      <p class="subtitle">
-        Fulbright Scholar
-      </p>
-
-      <div class="intro-text">
+      <!-- BIO -->
+      <div class="bio-section">
         <p>
-          My research focuses on epidemiological modeling to understand
-          and predict disease dynamics, using multidisciplinary
-          approaches, with a developing interest in genomics.
+          My research focuses on epidemiological modeling to understand and predict disease dynamics, using multidisciplinary approaches.
         </p>
       </div>
 
-</div>
+      <!-- FEATURED RESEARCH -->
+      <div class="featured-research">
+        <h2>Research Highlights</h2>
 
-<!-- RESEARCH INTERESTS -->
-<div class="research-interests">
+        <!-- PROJECT 1: TBD Risk -->
+        <div class="research-card">
+          <div class="research-card-text">
+            <h3>County-level tick-borne disease risk in Illinois</h3>
+            <p>We integrated species-specific predicted tick abundance, pathogen prevalence, and seasonal phenology to estimate relative tick-borne disease risk across all 102 Illinois counties, producing an interactive R Shiny application for public and surveillance use.</p>
+            <div class="card-figures">
+              <figure class="card-fig">
+                <img src="www/images/research/tbd_fig.png" alt="County-level tick-borne disease risk map" onerror="this.parentElement.style.display='none'">
+                <figcaption>County risk ranking stability across weighting scenarios and seasonal phenology of three tick species in Illinois</figcaption>
+              </figure>
+            </div>
+            <a href="https://doi.org/10.64898/2026.10.14.26365569" target="_blank" class="pub-link">Article</a>
+          </div>
+        </div>
 
-  <h2>Research Interests</h2>
+        <!-- PROJECT 2: Bayesian Spatial -->
+        <div class="research-card">
+          <div class="research-card-text">
+            <h3>Predicting livestock tick abundance across data-sparse regions</h3>
+            <p>We developed Bayesian hierarchical spatial models using INLA to generate district-level, uncertainty-aware abundance predictions for <em>Rhipicephalus microplus</em> and <em>Hyalomma anatolicum</em> across Punjab and Khyber Pakhtunkhwa, Pakistan, identifying priority districts for surveillance and control.</p>
+            <div class="card-figures">
+              <figure class="card-fig">
+                <img src="www/images/research/bay_fig.png" alt="Predicted tick abundance maps Pakistan" onerror="this.parentElement.style.display='none'">
+                <figcaption>District-level sampling effort and predicted surveillance priority for <em>R. microplus</em> and <em>H. anatolicum</em> across Punjab and KPK</figcaption>
+              </figure>
+            </div>
+            <a href="https://doi.org/10.64898/2026.04.16.719086" target="_blank" class="pub-link">Article</a>
+          </div>
+        </div>
 
-  <ul>
-   <li>Infectious disease modelling</li>
-    <li>Spatial epidemiology</li>
-    <li>Public Health</li>
-  </ul>
+        <!-- PROJECT 3: Alpha-Gal -->
+        <div class="research-card">
+          <div class="research-card-text">
+            <h3>Machine-Learning Framework for Alpha-Gal Syndrome Exposure Potential</h3>
+            <p>We used random forest and XGBoost models to predict relative lone star tick (<em>Amblyomma americanum</em>) abundance across 102 Illinois counties, then combined predictions with ehrlichiosis surveillance to construct county-level AGS exposure-risk indices validated against CDC suspected-AGS categories.</p>
+            <div class="card-figures">
+              <figure class="card-fig">
+                <img src="www/images/research/ags_fig.png" alt="AGS exposure-risk index maps" onerror="this.parentElement.style.display='none'">
+                <figcaption>Predictor effects and feature importance for lone star tick and AGS exposure-risk index validation against CDC suspected-AGS categories</figcaption>
+              </figure>
+            </div>
+            <a href="https://doi.org/10.64898/2026.07.24.26358812" target="_blank" class="pub-link">Article</a>
+          </div>
+        </div>
 
-</div>
+      </div>
+      <!-- end featured research -->
 
-<div class="affiliation">
-
-  <img src="www/icons/i.png" class="affiliation-icon" alt="Info">
-
-  <div class="affiliation-text">
-    <p>Department of Pathobiology</p>
-    <p>College of Veterinary Medicine</p>
-    <p>University of Illinois Urbana Champaign</p>
-  </div>
-
-</div>
     </section>
+    <!-- end main content -->
 
   </main>
 
-<!-- WEBSITE FOOTER -->
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>
-      © 2025 Abrar Hussain ·
-      <a href="https://github.com/abrarhussain95"
-         target="_blank" rel="noopener noreferrer">GitHub</a>
-    </p>
-    <small>Hosted on GitHub Pages</small>
-  </div>
-</footer>
+  <!-- WEBSITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        © 2025 Abrar Hussain ·
+        <a href="https://github.com/abrarhussain95" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      <small>Hosted on GitHub Pages</small>
+    </div>
+  </footer>
 
 </body>
 </html>
